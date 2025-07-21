@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Donation Form</title>
+  </head>
+  <body>
+    <h2>Donor Information</h2>
+
+    <p>
+      <label for="first-name">First Name*</label>
+      <input type="text" id="first-name" name="first-name" />
+    </p>
+    <p>
+      <label for="last-name">Last Name*</label>
+      <input type="text" id="last-name" name="last-name" />
+    </p>
+    <p>
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company" />
+    </p>
+    <p>
+      <label for="address1">Address 1*</label>
+      <input type="text" id="address1" name="address1" />
+    </p>
+    <p>
+      <label for="address2">Address 2</label>
+      <input type="text" id="address2" name="address2" />
+    </p>
+    <p>
+      <label for="city">City*</label>
+      <input type="text" id="city" name="city" />
+    </p>
+    <p>
+      <label for="state">State*</label>
+      <select id="state" name="state">
+        <option selected>Select a State</option>
+      </select>
+    </p>
+    <p>
+      <label for="zip-code">Zip Code*</label>
+      <input type="text" id="zip-code" name="zip-code" />
+    </p>
+    <p>
+      <label for="country">Country*</label>
+      <select id="country" name="country">
+        <option selected>Select a Country</option>
+      </select>
+    </p>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" />
+    </p>
+    <p>
+      <label for="fax">Fax</label>
+      <input type="text" id="fax" name="fax" />
+    </p>
+    <p>
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" />
+    </p>
+
+    <p>
+      <strong>Donation Amount*</strong><br />
+      <input type="radio" id="none" name="donation_amount" value="none" />
+      <label for="none">None</label>
+      <input type="radio" id="50" name="donation_amount" value="50" />
+      <label for="50">$50</label>
+      <input type="radio" id="75" name="donation_amount" value="75" />
+      <label for="75">$75</label>
+      <input type="radio" id="100" name="donation_amount" value="100" />
+      <label for="100">$100</label>
+      <input type="radio" id="250" name="donation_amount" value="250" />
+      <label for="250">$250</label>
+      <input type="radio" id="other" name="donation_amount" value="other" />
+      <label for="other">Other</label>
+    </p>
+    <p>
+      <small>(Check a button or type in your amount)</small> Other Amount $
+      <input type="text" name="other_amount" size="8" />
+    </p>
+    <p>
+      <strong>Recurring Donation</strong><br />
+      <input type="checkbox" id="recurring" name="recurring" />
+      <label for="recurring"
+        >I am interested in giving on a regular basis. (Check if yes)</label
+      >
+    </p>
+    <p>
+      Monthly Credit Card $ <input type="text" name="cc_amount" size="5" /> For
+      <input type="text" name="cc_months" size="3" /> Months
+    </p>
+
+    <br />
+
+    <h2>Honorarium and Memorial Donation Information</h2>
+    <p>
+      <strong>I would like to make this donation</strong><br />
+      <input type="radio" id="honor" name="donation_type" value="honor" />
+      <label for="honor">To Honor</label><br />
+      <input type="radio" id="memory" name="donation_type" value="memory" />
+      <label for="memory">In Memory of</label>
+    </p>
+    <p>
+      <label for="ack-name">Name</label>
+      <input type="text" id="ack-name" name="ack-name" />
+    </p>
+    <p>
+      <label for="ack-address">Acknowledge Donation to</label>
+      <input type="text" id="ack-address" name="ack-address" />
+    </p>
+    <p>
+      <label for="ack-city">Address</label>
+      <input type="text" id="ack-city" name="ack-city" />
+    </p>
+    <p>
+      <label for="ack-state-text">City</label>
+      <input type="text" id="ack-state-text" name="ack-state-text" />
+    </p>
+    <p>
+      <label for="ack-state-select">State</label>
+      <select id="ack-state-select" name="ack-state-select">
+        <option selected>Select a State</option>
+      </select>
+    </p>
+    <p>
+      <label for="ack-zip">Zip</label>
+      <input type="text" id="ack-zip" name="ack-zip" />
+    </p>
+
+    <br />
+
+    <h2>Additional Information</h2>
+    <p>
+      Please enter your name, company or organization as you would like it to
+      appear in our publications:
+    </p>
+    <p>
+      <label for="pub-name">Name</label>
+      <input type="text" id="pub-name" name="pub-name" />
+    </p>
+    <p>
+      <input type="checkbox" id="anonymous" name="anonymous" />
+      <label for="anonymous">I would like my gift to remain anonymous.</label>
+    </p>
+    <p>
+      <input type="checkbox" id="matching-gift" name="matching-gift" />
+      <label for="matching-gift"
+        >My employer offers a matching gift program. I will mail the matching
+        gift form.</label
+      >
+    </p>
+    <p>
+      <input type="checkbox" id="no-thank-you" name="no-thank-you" />
+      <label for="no-thank-you"
+        >Please save the cost of acknowledging this gift by not mailing a thank
+        you letter.</label
+      >
+    </p>
+    <p>
+      <label for="comments"><strong>Comments</strong></label
+      ><br />
+      <textarea id="comments" name="comments" rows="5" cols="50"></textarea
+      ><br />
+      <small>(Please type any questions or feedback here)</small>
+    </p>
+    <p>
+      <strong>How may we contact you?</strong><br />
+      <input
+        type="checkbox"
+        id="contact-email"
+        name="contact_method"
+        value="email"
+      />
+      <label for="contact-email">E-mail</label><br />
+      <input
+        type="checkbox"
+        id="contact-postal"
+        name="contact_method"
+        value="postal"
+      />
+      <label for="contact-postal">Postal Mail</label><br />
+      <input
+        type="checkbox"
+        id="contact-phone"
+        name="contact_method"
+        value="phone"
+      />
+      <label for="contact-phone">Telephone</label><br />
+      <input
+        type="checkbox"
+        id="contact-fax"
+        name="contact_method"
+        value="fax"
+      />
+      <label for="contact-fax">Fax</label>
+    </p>
+    <p>
+      <strong
+        >I would like to receive newsletters and information about special
+        events by:</strong
+      ><br />
+      <input
+        type="checkbox"
+        id="newsletter-email"
+        name="newsletter_method"
+        value="email"
+      />
+      <label for="newsletter-email">E-mail</label><br />
+      <input
+        type="checkbox"
+        id="newsletter-postal"
+        name="newsletter_method"
+        value="postal"
+      />
+      <label for="newsletter-postal">Postal Mail</label>
+    </p>
+    <p>
+      <input type="checkbox" id="volunteer" name="volunteer" />
+      <label for="volunteer"
+        >I would like information about volunteering with the</label
+      >
+    </p>
+
+    <br />
+
+    <p>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Continue" />
+    </p>
+
+    <hr />
+    <p>
+      <strong>Donate online with confidence. You are on a secure server.</strong
+      ><br />
+      If you have any problems or questions, please contact support
+    </p>
+  </body>
+</html>
