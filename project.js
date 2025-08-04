@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     resetButton.addEventListener('click', function(e) {
         e.preventDefault();
-        if (confirm('Are you sure you want to reset the form? All entered data will be lost.')) {
+        if (confirm('Are you sure you want to reset the form?')) {
             resetForm();
         }
     });
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         requiredFields.forEach(field => {
             const element = document.getElementById(field.id);
-            if (!element.value.trim() || (element.tagName  'SELECT' && element.selectedIndex  0)) {
+            if (!element.value.trim() || (element.tagName === 'SELECT' && element.selectedIndex === 0)) {
                 showError(field.id, `${field.name} is required`);
                 isValid = false;
             }
