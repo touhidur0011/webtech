@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         requiredFields.forEach(field => {
             const element = document.getElementById(field.id);
-            if (!element.value.trim() || (element.tagName === 'SELECT' && element.selectedIndex === 0)) {
+            if (!element.value.trim() || (element.tagName  'SELECT' && element.selectedIndex  0)) {
                 showError(field.id, `${field.name} is required`);
                 isValid = false;
             }
